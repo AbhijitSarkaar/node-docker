@@ -22,8 +22,5 @@ services:
       # store mongodb data in a volume named mongo-db
       - mongo-db:/data/db
 
-  redis:
-    image: redis
-
 volumes:
   mongo-db:
