@@ -15,10 +15,10 @@ const app = express();
 //   .catch((e) => console.log(e));
 
 app.enable("trust proxy");
-app.use(cors);
+app.use(cors());
 app.use(express.json());
 
-app.get("/", (req, res) => {
+app.get("/api/v1", (req, res) => {
   res.send("hello world");
 });
 
