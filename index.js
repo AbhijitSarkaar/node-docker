@@ -5,14 +5,14 @@ const cors = require("cors");
 
 const app = express();
 
-const MONGO_URL = `mongodb://${config.MONGO_USER}:${config.MONGO_PASSWORD}@${config.MONGO_IP}:${config.MONGO_PORT}/?authSource=admin`;
+// const MONGO_URL = `mongodb://${config.MONGO_USER}:${config.MONGO_PASSWORD}@${config.MONGO_IP}:${config.MONGO_PORT}/?authSource=admin`;
 
-mongoose
-  .connect(MONGO_URL)
-  .then(() => {
-    console.log("successfully connected to DB");
-  })
-  .catch((e) => console.log(e));
+// mongoose
+//   .connect(MONGO_URL)
+//   .then(() => {
+//     console.log("successfully connected to DB");
+//   })
+//   .catch((e) => console.log(e));
 
 app.enable("trust proxy");
 app.use(cors());
