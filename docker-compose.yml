@@ -14,7 +14,7 @@ services:
       - mongo
 
   mongo:
-    image: mongo
+    image: mongo:6.0-focal
     environment:
       - MONGO_INITDB_ROOT_USERNAME=admin
       - MONGO_INITDB_ROOT_PASSWORD=admin
