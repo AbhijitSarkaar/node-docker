@@ -18,6 +18,7 @@ services:
     environment:
       - MONGO_INITDB_ROOT_USERNAME=admin
       - MONGO_INITDB_ROOT_PASSWORD=admin
+    restart: always
     volumes:
       # store mongodb data in a volume named mongo-db
       - mongo-db:/data/db
