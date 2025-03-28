@@ -19,7 +19,7 @@ app.use(cors());
 app.use(express.json());
 
 app.get("/api/v1", (req, res) => {
-  res.send("hello world");
+  res.send("hello world!!!");
 });
 
 app.use("/api/v1/posts", require("./routes/postRoutes"));
